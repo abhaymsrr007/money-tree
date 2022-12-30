@@ -1,0 +1,31 @@
+@mixin flex($a: center, $b: center) {
+  display: flex;
+  justify-content: $a;
+  align-items: $b;
+}
+.sidebar {
+  @include flex(space-between,center);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 80vh;
+  max-width: 550px;
+  width: 400;
+  background-color: rgba(0, 0, 0, 0.738);
+  font-size: 4em;
+  flex-direction: column;
+  @media screen and (max-width: 776px) {
+    font-size: 3em;
+    height: 70vh;
+    width: 35%;
+  }
+  @media screen and (max-width: 580px) {
+    font-size: 2em;
+    height: 70vh;
+    width: 35vw;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+}

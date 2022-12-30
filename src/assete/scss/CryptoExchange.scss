@@ -1,0 +1,22 @@
+@mixin flex($a: center, $b: center) {
+    display: flex;
+    justify-content: $a;
+    align-items: $b;
+  }
+  
+.Crypto-exchange-container{
+    @include flex();
+    flex-direction: column;
+    // background-color: blanchedalmond;
+    max-width: 65vw;
+    width: 70vw;
+    height: 55vh;
+    margin: auto;
+    .Crypto-exchang-title{
+        font-size: 3.5em;
+        font-weight: 800;
+        line-height: 1.2em;
+        text-align: center;
+    }
+    
+}
